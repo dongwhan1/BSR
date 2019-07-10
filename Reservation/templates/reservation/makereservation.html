@@ -1,0 +1,9 @@
+{% extends 'reservation/makereserv.html' %}
+
+{% block content %}
+    <h1>신청하기</h1>
+    <form method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">제출하기</button>
+    </form>
+{% endblock %}

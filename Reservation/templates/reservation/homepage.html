@@ -1,10 +1,70 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BSR</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/reservation.css' %}">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "#testDatepicker" ).datepicker({
+                    changeMonth: false,
+                    dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                    monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                    nextText: '다음 달',
+                    prevText: '이전 달',
+                    minDate: "-0D",
+                    maxDate: "+30D",
+                    dateFormat: "yymmdd",
+            });
+        });
+    </script>
+    <style>
+body{
+            /*First Page desktop*/
+            background-image: url('/static/image/page1.png');
+            background-size: cover;
+            background-repeat:repeat-x;
+
+}
+ .link{
+            display: block;
+            text-align: center;
+            margin-top: 3%;
+            margin-bottom: -1.2%;
+            font-family: arial;
+            font-size: 25px;
+            text-transform: uppercase;
+            color:#B7D4FF;
+ }
+
+#logo{
+            margin-top:-5%;
+            }
+
+    </style>
 </head>
 <body>
+
+
+
+
+    <p id="logo"><br> <br><br> 북일 운동장 예약 시스템 <br> BUGIL STADIUM RESERVARTION</p>
+        <img id="logoart" src="/static/image/logo art.png">
+
+        <a href="{% url 'schedule' %}"> <p class="link">schedule</p></a>
+        <a href="{% url 'makereserv' %}"> <p class="link"> make reservation</p></a>
+
+
+
 
 </body>
 </html>

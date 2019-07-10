@@ -1,0 +1,112 @@
+    /*id tags*/
+
+    #logo{
+
+	    font-family: NanumSquareOTFR;
+	    color: #fff;
+	    font-size: 48px;
+	    font-weight: 400;
+	    line-height: 48px;
+        line-height: 70px;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+
+    #logoart{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 17%;
+        min-width: 250px;
+        }
+
+    /*Arrow*/
+    #arrow{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4%;
+        min-width: 50px;
+    }
+
+    #arrow-black{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4%;
+        min-width: 50px;
+        }
+
+    #arrow-up{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4%;
+        min-width: 50px;
+    }
+
+    #arrow-up2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4%;
+        min-width: 50px;
+
+    }
+    /*Arrow*/
+
+    #view{
+        font-family: NanumSquareOTFR;
+        font-size: 28pt;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        }
+
+    #reservation{
+        font-family: NanumSquareOTFR;
+        font-size: 32pt;
+        display: block;
+        margin-left: 12%;
+        position: relative;
+        margin-top: -0.3%;
+        float: left;
+    }
+
+    #resimg{
+        display: block;
+        width: 40%;
+        float: right;
+        position: relative;
+        margin-right: 10%;
+        min-width: 450px
+
+
+    }
+
+
+
+    @media (max-width:768px){ /*mobile size*/
+        #resimg{
+            align-content: center;
+            width: 85%;
+            right: auto;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            }
+        #reservation{
+            font-size: 25pt;
+            text-align: center;
+            float: none;
+            margin: auto;
+            margin-bottom: 30pt;
+            }
+        #logo{
+            font-size: 25pt;
+            float: none;
+            }
+        } /*Mobile size window settings*/

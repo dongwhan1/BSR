@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSR</title>
+    <link rel="stylesheet" href="{% static 'css/reservation.css' %}">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "#testDatepicker" ).datepicker({
+                    changeMonth: false,
+                    dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                    monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                    nextText: '다음 달',
+                    prevText: '이전 달',
+                    minDate: "-0D",
+                    maxDate: "+30D",
+                    dateFormat: "yymmdd",
+            });
+        });
+    </script>
+    <style>
+        .div1 {
+            /*First Page desktop*/
+            background-image: url('/static/image/page1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: -30px;
+            margin-left: -10px;
+            margin-top: -60px;
+            }
+
+        .div2 {
+            /*Second Page Desktop*/
+            background: url('/static/image/Layer_3.png');
+            background-size: cover;
+            margin-top: -50px;
+            margin-left: -10px;
+            margin-right: -20px;
+            object-position: center;
+            }
+
+        .div3 {
+            background: url('/static/image/joanna-kosinska-433799-unsplash.jpg');
+            background-size: cover;
+            margin-top: -30px;
+            margin-left: -10px;
+            margin-right: -20px;
+            }
+    </style>
+</head>
+<body>
+
+
+
+<div class="div1" id="div1">
+    <p id="logo"><br> <br><br> 북일 운동장 예약 시스템 <br> BUGIL STADIUM RESERVARTION</p>
+        <img id="logoart" src="/static/image/logo art.png">
+    <p><br><br><br><br></p>
+        <a href="#div2"><img id="arrow" src="/static/image/arrow.png" alt=""></a>
+
+    <p> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br><br>
+    <br><br><br>
+    </p>
+</div>
+
+
+<div class="div2" id="div2">
+
+     <br><br>  <br>
+    <a href="#top"> <img id="arrow-up2" src="/static/image/arrow up.png" alt=""></a>
+    <p id="view">예약보기 </p>
+
+    <p>
+    <br> <br><br> <br><br> <br><br> <br><br> <br><br><br><br> <br><br> <br><br> <br><br> <br><br><br><br><br><br><br><br><br><br><br><br> <br><br> <br><br>
+     <a href="#div3"><img id="arrow-black" src="/static/image/arrow black.png" alt=""></a>
+        <br><br>  <br><br> <br><br> <br><br>
+        <br>
+    </p>
+    </div>
+
+
+<div class="div3" id="div3">
+
+    <a href="#div2"> <img id="arrow-up" src="/static/image/arrow up.png" alt=""></a>
+    
+    <img id="resimg" src="/static/image/우동장 vector 2.png" alt="">
+
+
+
+</div>
+
+</body>
+</html>
